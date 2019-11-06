@@ -1,0 +1,45 @@
+body{
+    font-family: "Avenir";
+}
+
+.box{
+    position: relative;
+    width:100px;
+    height:100px;
+    margin:4px;
+    display:inline-block;
+}
+
+.red{background-color:red}
+
+.blue{background-color:blue}
+
+.jumbotron-fluid{
+    background:linear-gradient(to bottom,#B22526,#923740);
+    /* position: relative;
+    display: block; */
+    height: 100vh;
+}
+
+
+.main-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#TEXT1{
+    color: #FF6F6F;
+    font-weight: bold;
+    font-size: 130px;
+    letter-spacing:10px;
+}
+
+#TEXT2{
+    color: #862327;
+    font-weight: bold;
+    font-size: 130px;
+    letter-spacing:10px;
+}
