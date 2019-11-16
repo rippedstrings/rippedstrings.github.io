@@ -33,13 +33,14 @@ body{
 #TEXT1{
     color: #FF6F6F;
     font-weight: bold;
-    font-size: 130px;
+    /* font-size: 130px; */
+    font-size: 10vw;
     letter-spacing:10px;
 }
 
 #TEXT2{
     color: #862327;
     font-weight: bold;
-    font-size: 130px;
+    font-size: 10vw;
     letter-spacing:10px;
 }
