@@ -43,11 +43,14 @@
 
             <div id="navbarMenuHeroB" class="navbar-menu">
                 <div class="navbar-end">
+                    <a class="navbar-item has-text-white" href="about.html">
+                        A B O U T
+                    </a>
                     <a class="navbar-item has-text-white">
                         R E S U M E
                     </a>
                     <span class="navbar-item">
-                        <a class="button chat-button">
+                        <a class="chat-button has-text-white">
                             <span class="icon">
                                 <i class="fas fa-coffee"></i>
                             </span>
@@ -63,16 +66,20 @@
     <div id="fullpage">
         <div class="section s1 hero">
             <div class="container has-text-centered">
-                <h1 class="has-text-white" data-aos="fade-in" data-aos-duration="=500">H I , &nbsp; I ' M &nbsp; M I C H
+                <img class="flower" data-aos="fade-in" data-aos-duration="=200" src="assets/flower-by-m-2.png">
+                <h1 class="has-text-white is-size-6-mobile" data-aos="fade-in" data-aos-duration="=500">H I , &nbsp; I '
+                    M &nbsp; M I C H
                     E L L E.</h1>
-                <h1 class="title main-title" data-aos="fade-in" data-aos-duration="2000">I M A K E</h1>
-                <h1 class="title sub-title text-flicker-in-glow" data-aos="fade-in">T H I N G S</h1>
+                <h1 class="title main-title is-size-1-mobile" data-aos="fade-in" data-aos-duration="2000">I M A K E</h1>
+                <h1 class="title sub-title text-flicker-in-glow is-size-1-mobile" data-aos="fade-in">T H I N G S</h1>
             </div>
 
             <div class="container has-text-centered">
-                <h2 class="title is-6 mini-sub-title tracking-in-expand-fwd-bottom" data-aos="fade-up"
+                <h2 class="title is-6 mini-sub-title is-size-5-mobile tracking-in-expand-fwd-bottom" data-aos="fade-up"
                     data-aos-duration="3000">W H A T &nbsp; T H I N G S ?</h2>
             </div>
+
+            <hr class="line" size="500" />
         </div>
 
         <div class="section s2">
@@ -80,7 +87,7 @@
                 <div class="columns is-vcentered">
                     <div class="column">
 
-                        <h1 class="title">01 &nbsp;<span style="color: #4b247b;">PAWK</span></h1>
+                        <h1 class="title is-size-1-mobile">01 &nbsp;<span style="color: #4b247b;">PAWK</span></h1>
                         <p class="subtitle">ANDROID APP. CODING. UI/UX DESIGN</p>
                         <h2 class="subtitle">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas orci nibh, condimentum ut
@@ -108,8 +115,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="column">
-                        <img class="image is-2by3" src="">
+
+                    <div class="column is-two-thirds">
+                        <img class="pawk-img" src="assets/pawk-mockups.png">
                     </div>
                 </div>
 
@@ -119,39 +127,37 @@
         <div class="section s3">
             <div class="container">
                 <div class="columns is-vcentered">
-                    <div class="column">
-                        <h1 class="title has-text-white">02 &nbsp;<span style="color: #ff0078;">VESSEL LANDING
-                                PAGE</span></h1>
-                        <h2 class="subtitle has-text-white">VESSEL® is a premium vape brand that elevates the cannabis
-                            vape
-                            catrige experience to a whole other level. I created a landing page for a collab between
-                            Higher
-                            Mentality and VESSEL to in hopes to showcase the brand's luxurious feel as well as generate
-                            more
-                            sales. </h2>
-
-                        <h1 class="subtitle">Tools Used</h1>
-                        <div class="container ">
-                            <span class="tag is-danger is-light is-medium"><i class="fab fa-sketch"></i>&nbsp;
-                                Sketch</span>
-                            <span class="tag is-danger is-light is-medium"><i class="fab fa-adobe"></i>&nbsp;
-                                Photoshop</span>
-                        </div>
-
-                        <div class="container">
-                            <a class="button">
-                                <span class="icon">
-                                    <i class="fab fa-behance-square"></i>
-                                </span>
-                                <span>T O &nbsp; B E H A N C E</span>
-                            </a>
-                        </div>
+                    <div class="column is-two-thirds">
+                        <img class="pawk-img is-fullheight" src="assets/vessel-pg.png">
                     </div>
 
                     <div class="column">
-                            <img class="image is-2by3" src="">
+                        <h1 class="title has-text-white">02 &nbsp;<span style="color: #20BB63;">V E S S E L</span></h1>
+                        <hr class="line2">
+                        <h2 class="subtitle has-text-white">VESSEL® is a premium vape brand that elevates the cannabis
+                            vape
+                            catrige experience to a whole other level. <br> <br> I created a landing page for a collab
+                            between
+                            Higher
+                            Mentality and VESSEL to showcase the brand's luxurious vape products as well as to generate
+                            more
+                            sales. </h2>
+
+                            <p style="display:inline;" class="subtitle">Tools Used - </p>
+                            <div style="display:inline-block;" class="container">
+                                <span class="icon has-text-warning is-large"><i class="fab fa-lg fa-sketch"></i></span>
+                                <span class="icon has-text-danger is-large"><i class="fab fa-lg fa-adobe"></i></span>
+                            </div>
+                  
+
+                        <div class="container">
+                            <a class="view-project-button">
+                                V I E W &nbsp; P R O J E C T
+                            </a>
                         </div>
-                        
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -224,6 +230,8 @@
             autoScrolling: true,
             scrollHorizontally: true,
             navigation: true,
+            navigationTooltips: ['', '01', '02', '03', '04', '05'],
+            showActiveTooltip: true,
             scrollingSpeed: 1000
         });
     </script>
