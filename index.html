@@ -1,38 +1,92 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<html lang="en">
 
-<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<script src="anime.min.js"></script>
+    <!-- CSS FRAMEWORKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- JS FILES -->
+    <script src="https://kit.fontawesome.com/b75bb4f24b.js" crossorigin="anonymous"></script>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<!-- FONT AWESOME -->
-<script src="https://kit.fontawesome.com/b75bb4f24b.js" crossorigin="anonymous"></script>
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="style2020.css">
+
+    <!-- FONT STYLES -->
+
+    <title>Michelle Wong Portfolio</title>
+
+
+</head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="main-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="logo">
-                            <a href="#"></a>
-                        </div>
-                    </div>
-                </div>
+    <div class="hero-head"></div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="assets/m-logo.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
             </div>
 
-            <div class="container">
-                <div class="middle-text row">
-                    <div class="main-text col-md-12">
-                        <h1 id="TEXT1">COMING</h1>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-white" href="about.html">
+                        A B O U T
+                    </a>
+                    <a class="navbar-item has-text-white">
+                        R E S U M E
+                    </a>
+                    <span class="navbar-item">
+                        <a class="chat-button has-text-white">
+                            <span class="icon">
+                                <i class="fas fa-coffee"></i>
+                            </span>
+                            <span>L E T ' S &nbsp; C H A T</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div id="fullpage">
+        <div class="section s1 hero">
+            <div class="container has-text-centered">
+                <img class="flower" data-aos="fade-in" data-aos-duration="=200" src="assets/flower-by-m-2.png">
+                <h1 class="has-text-white is-size-6-mobile" data-aos="fade-in" data-aos-duration="=500">H I , &nbsp; I '
+                    M &nbsp; M I C H
+                    E L L E.</h1>
+                <h1 class="title main-title is-size-1-mobile" data-aos="fade-in" data-aos-duration="2000">I M A K E</h1>
+                <h1 class="title sub-title text-flicker-in-glow is-size-1-mobile" data-aos="fade-in">T H I N G S</h1>
+            </div>
+
+            <div class="container has-text-centered">
+                <h2 class="title is-6 mini-sub-title is-size-5-mobile tracking-in-expand-fwd-bottom" data-aos="fade-up"
+                    data-aos-duration="3000">W H A T &nbsp; T H I N G S ?</h2>
+            </div>
+
+            <hr class="line" size="500" />
+        </div>
+
+        <div class="section s2">
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="is-size-6-mobile" id="TEXT1">COMING</h1>
                         <h1 id="TEXT2">SOON</h1>
                         <span style="font-size: 2em; color: white;">
                             <a style="color:white" href="https://www.linkedin.com/in/michelle-wong-design/">
@@ -45,14 +99,45 @@
                                 <i class="fab fa-behance-square"></i>
                             </a>
                         </span>
-                    </div>
+                        </div>
+
                 </div>
 
             </div>
+        </div>
+
+      
 
         </div>
 
+
+
+
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            navigationTooltips: ['', '01', '02', '03', '04', '05'],
+            showActiveTooltip: true,
+            scrollingSpeed: 1000
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
 </body>
 
 </html>

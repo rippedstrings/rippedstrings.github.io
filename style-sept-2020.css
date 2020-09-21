@@ -1,0 +1,42 @@
+:root{
+    --accent: #F3E1D6;
+    --primary: #2B2B2B;
+}
+
+.nav-bg{
+    background-color: var(--accent);
+}
+
+.lp-area{
+    background-color: var(--accent);
+}
+
+.line{
+    position:absolute;
+    display:block;
+    top:70%;
+    left:50%;
+    text-align:center;
+    background:linear-gradient(to bottom, var(--primary), var(--accent));
+    width:1px;
+    animation: line 3s forwards;
+  }
+  
+  @keyframes line{
+    from {
+      height:0px;
+      bottom:0;
+    }
+    to {
+      height: 200px;
+      bottom:200px;
+    }
+  }
+  
+.work{
+    background-color:var(--primary);
+}
+
+.work-title{
+    color: var(--accent);
+}
