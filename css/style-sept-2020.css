@@ -79,6 +79,36 @@
   padding-bottom: 50px;
 }
 
+@media (max-width:600px){
+  .greeting h1{
+    font-family: "konexy";
+    font-size:3.5rem;
+  }
+
+  .flower{
+    max-width: 60%;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    padding-top: 40px;
+    padding-right: 20px;
+  }
+
+  .titles{
+    padding-top: 30px;
+  }
+
+  .about-me{
+    font-weight: bold;
+  }
+
+  .line-text{
+    font-size: 1.0rem;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
 /* .line{
     position:absolute;
     display:block;
