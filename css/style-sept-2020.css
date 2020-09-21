@@ -1,0 +1,385 @@
+:root{
+    --accent: #F3E1D6;
+    --primary: #2B2B2B;
+}
+
+@font-face {
+  font-family: "Konexy Personal Use";
+  src: url("/font/KonexyPersonalUse.otf");
+}
+
+@font-face {
+  font-family: "Konexy";
+  src: url("font/KonexyPersonalUse.otf");
+  src:
+  url("font/konexypersonaluse-webfont.woff") format("woff"),
+  url("font/KonexyPersonalUse.otf") format("opentype");
+  }
+  
+
+.nav-bg{
+    background-color: var(--accent);
+}
+
+.navbar a{
+  color: black;
+  font-weight: bold;
+}
+
+.navbar a:hover{
+  text-decoration: line-through;
+}
+
+
+/* LANDING */
+.lp-area{
+    background-color: var(--accent);
+    height: 100vh;
+}
+
+.greeting h1{
+  font-family: "konexy";
+  font-size: 5.5rem;
+  padding-top: 100px;
+}
+
+.titles{
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+.my-skills{
+  list-style-type: none;
+  padding:0;
+}
+
+.about-me{
+  font-weight: bold;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+}
+
+.flower{
+  max-width: 30%;
+  position: absolute;
+  z-index: 999;
+
+  right: 0;
+}
+
+.flower-area{
+  text-align: right;
+}
+
+.line-text{
+  font-size: 1.0rem;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* .line{
+    position:absolute;
+    display:block;
+    top:70%;
+    left:50%;
+    text-align:center;
+    background:linear-gradient(to bottom, var(--primary), var(--accent));
+    width:1px;
+    animation: line 3s forwards;
+  }
+  
+  @keyframes line{
+    from {
+      height:0px;
+      bottom:0;
+    }
+    to {
+      height: 200px;
+      bottom:200px;
+    }
+  } */
+
+.line-area{
+  text-align: center;
+
+}
+  
+.work{
+    background-color:var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* ACTUAL WORK */
+.work-title{
+    color: var(--accent);
+    font-family: "konexy";
+    font-size: 5.5rem;
+    -webkit-text-stroke: 3px var(--accent);
+    -webkit-text-fill-color: var(--primary);
+}
+
+
+.selected-works{
+  background-color: var(--primary);
+}
+
+
+
+/* cursor hover */
+.cursor{
+  position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+      0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(1.0);
+}
+
+.cursor::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-image: url(../assets/mw-circle.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.cursor.active {
+  opacity: 1;
+  transform: scale(20);
+}
+
+.cursor.active::before {
+  opacity: 1;
+}
+
+.cursor-follower {
+  position: absolute;
+  background: var(--accent);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  z-index: 1;
+  transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+      0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(4px, 4px);
+}
+
+.cursor-follower.active {
+  opacity: 0.3;
+  transform: scale(0);
+}
+
+.portfolio-thumb {
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+}
+
+.portfolio-thumb img {
+  opacity: 0.8;
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.3, 1);
+  transform-origin: 90% center;
+  filter: grayscale(100%) brightness(80%);
+
+}
+
+.portfolio-item:hover .portfolio-thumb {
+  transform: translateX(-1.75rem);
+}
+
+.portfolio-item:hover .portfolio-thumb img {
+  opacity: 0.8;
+  transform: scale(1.2);
+  filter: grayscale(0%) brightness(100%);
+}
+
+/* LEFT TEXT */
+.front-img-1{
+  position: absolute;
+  z-index: 993;
+  left:0;
+  width: 60%;
+}
+
+.back-img-1{
+  position: relative;
+  width: 60%;
+  padding-top: 150px;
+  z-index: 992;
+  float: right;
+  padding-right: 50px;
+}
+
+.project-title-1{
+  color: var(--accent);
+  font-family: "konexy";
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: var(--primary);
+  z-index: 999;
+  margin-top: 450px;
+}
+
+.year-title-1{
+  color: var(--accent);
+  font-family: "konexy";
+  -webkit-text-stroke: 1px var(--accent);
+  -webkit-text-fill-color: transparent;
+  z-index: 998;
+  position: absolute;
+  float:right;
+  right:0;
+  margin-top: 300px;
+  font-size: 4.4rem;
+}
+
+.project-desc-1{
+  color: var(--accent);
+  z-index: 999;
+  float: left;
+}
+
+
+/* RIGHT TEXT */
+.front-img{
+  position: absolute;
+  z-index: 992;
+  left:0;
+  width: 60%;
+  padding-left: 80px;
+}
+
+.back-img{
+  position: relative;
+  left: 500px;
+  width: 60%;
+  padding-top: 150px;
+  z-index: 993;
+  float: left;
+  padding-bottom: 300px;
+}
+
+.project-title{
+  color: var(--accent);
+  font-family: "konexy";
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: var(--primary);
+  z-index: 999;
+  float: right;
+}
+
+.year-title{
+  color: var(--accent);
+  font-family: "konexy";
+  -webkit-text-stroke: 1px var(--accent);
+  -webkit-text-fill-color: transparent;
+  z-index: 998;
+  position: absolute;
+  font-size: 4.4rem;
+}
+
+.project-desc{
+  color: var(--accent);
+  z-index: 999;
+  float: right;
+}
+
+.project-line{
+  z-index: 999;
+
+  float: right;
+}
+
+.contact{
+  background-color: var(--primary);
+  font-family: "konexy";
+  text-transform: uppercase;
+}
+
+.thx{
+  font-size: 5.5rem;
+  -webkit-text-stroke: 1px var(--accent);
+  -webkit-text-fill-color: var(--primary);
+}
+
+.collab{
+  font-size: 5.0rem;
+  color: var(--accent);
+}
+
+.email{
+  font-size: 5.4rem;
+  color: white;
+  padding-bottom: 100px;
+}
+
+.email:hover{
+  text-decoration: line-through;
+}
+
+.links span{
+  font-size: 3em;
+  color: white;
+}
+
+.links a{
+  color: var(--accent);
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+.links{
+  padding-bottom: 100px;
+}
+
+.footer{
+  background-color: var(--primary);
+  text-align: center;
+}
+
+.footer p{
+  color: var(--accent);
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
