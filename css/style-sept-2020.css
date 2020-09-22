@@ -15,7 +15,6 @@
   url("font/konexypersonaluse-webfont.woff") format("woff"),
   url("font/KonexyPersonalUse.otf") format("opentype");
   }
-  
 
 .nav-bg{
     background-color: var(--accent);
@@ -80,26 +79,34 @@
 }
 
 @media (max-width:600px){
+  .lp-area{
+    text-align: left;
+  }
+
   .greeting h1{
     font-family: "konexy";
-    font-size:3.5rem;
+    font-size:3.0rem;
+    padding-left: 10px;
   }
 
   .flower{
     max-width: 60%;
     position: absolute;
     z-index: 999;
-    right: 0;
     padding-top: 40px;
     padding-right: 20px;
   }
 
   .titles{
     padding-top: 30px;
+    padding-left: 10px;
+    padding-right:0;
   }
 
   .about-me{
     font-weight: bold;
+    padding-left: 10px;
+    padding-right:0;
   }
 
   .line-text{
@@ -108,28 +115,6 @@
     padding-bottom: 50px;
   }
 }
-
-/* .line{
-    position:absolute;
-    display:block;
-    top:70%;
-    left:50%;
-    text-align:center;
-    background:linear-gradient(to bottom, var(--primary), var(--accent));
-    width:1px;
-    animation: line 3s forwards;
-  }
-  
-  @keyframes line{
-    from {
-      height:0px;
-      bottom:0;
-    }
-    to {
-      height: 200px;
-      bottom:200px;
-    }
-  } */
 
 .line-area{
   text-align: center;
@@ -142,6 +127,21 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+@media (max-width:600px){
+  .work h1{
+    color: var(--accent);
+    font-family: "konexy";
+    font-size: 2.4rem;
+    -webkit-text-stroke: 1px var(--accent);
+    -webkit-text-fill-color: var(--primary);
+  }
+
+  .work{
+    height: 50vh;
+    text-align: center;
+  }
 }
 
 
@@ -412,4 +412,42 @@
   color: var(--accent);
   margin-bottom: 0;
   padding-bottom: 30px;
+}
+
+@media (max-width:600px){
+  .thx{
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1px var(--accent);
+    -webkit-text-fill-color: var(--primary);
+  }
+  
+  .collab{
+    font-size: 2.5rem;
+    color: var(--accent);
+  }
+  
+  .email{
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 100px;
+  }
+  
+  .email:hover{
+    text-decoration: line-through;
+  }
+  
+  .links span{
+    font-size: 2.0em;
+    color: white;
+  }
+  
+  .links a{
+    color: var(--accent);
+    padding-right: 30px;
+    text-decoration: none;
+  }
+  
+  .links{
+    padding-bottom: 100px;
+  }
 }

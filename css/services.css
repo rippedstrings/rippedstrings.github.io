@@ -1,0 +1,133 @@
+:root{
+    --accent: #F3E1D6;
+    --primary: #2B2B2B;
+}
+
+@font-face {
+  font-family: "Konexy Personal Use";
+  src: url("/font/KonexyPersonalUse.otf");
+}
+
+@font-face {
+  font-family: "Konexy";
+  src: url("font/KonexyPersonalUse.otf");
+  src:
+  url("font/konexypersonaluse-webfont.woff") format("woff"),
+  url("font/KonexyPersonalUse.otf") format("opentype");
+  }
+
+.nav-bg{
+    background-color: var(--accent);
+}
+
+.navbar a{
+  color: black;
+  font-weight: bold;
+}
+
+.navbar a:hover{
+  text-decoration: line-through;
+}
+
+body{
+  background-color: violet;
+}
+
+.dummy-section{
+  height: 100vh;
+}
+
+.services-section{
+    background-color: var(--accent);
+}
+
+.service-0{
+  padding-top: 100px;
+}
+
+.services-section h1{
+    color: var(--accent);
+    font-family: "konexy";
+    font-size: 7.0rem;
+    -webkit-text-stroke: 1px var(--accent);
+    -webkit-text-fill-color: var(--primary);
+    z-index: 999;
+    padding-bottom: 200px;
+}
+
+
+
+
+.smiley{
+  max-width: 20%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.services-section{
+  text-align: center;
+}
+
+.service-1{
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: left;
+}
+
+.service-2{
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: right;
+}
+
+.service-3{
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: left;
+}
+
+.service-4{
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: right;
+}
+
+.service-5{
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: left;
+}
+
+.service-6{
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: right;
+}
+
+.service-7{
+  position: relative;
+  left: 0px;
+  display: block;
+  width: 100%;
+  float: none;
+  text-align: left;
+}
+
