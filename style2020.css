@@ -285,3 +285,7 @@ hr.line2{
   font-size: 5.0rem;
   font-weight: bold;
 }
+
+.btn-work{
+  background-color: var(--accent);
+}

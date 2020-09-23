@@ -361,6 +361,53 @@
   float: right;
 }
 
+
+.btn-work{
+  background-color: var(--accent);
+  font-family: 'Konexy';
+}
+
+.behance-more{
+  padding-bottom: 300px;
+}
+
+@media (max-width:600px){
+  .front-img-1{
+    z-index: 993;
+    width: 90%;
+    display: absolute;
+  }
+  
+  .back-img-1{
+    display: none;
+  }
+  
+  .project-title-1{
+    color: var(--accent);
+    font-family: "konexy";
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: var(--primary);
+    z-index: 999;
+    margin-top: 450px;
+  }
+  
+  .year-title-1{
+    color: var(--accent);
+    font-family: "konexy";
+    -webkit-text-stroke: 1px var(--accent);
+    -webkit-text-fill-color: transparent;
+    z-index: 998;
+    font-size: 3.0rem;
+    float: left;
+  }
+  
+  .project-desc-1{
+    color: var(--accent);
+    z-index: 999;
+  }
+}
+
+
 .contact{
   background-color: var(--primary);
   font-family: "konexy";
