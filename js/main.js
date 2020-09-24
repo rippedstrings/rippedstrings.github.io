@@ -24,15 +24,6 @@ gsap.from(".line-text", { duration: 2.5, ease: "slow(0.7, 0.7, false)", y: 150 }
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.back-img-1',{
-    scrollTrigger: {
-        trigger: '.back-img-1',
-        start: 'top bottom',
-        end: 'center center',
-        scrub: true
-    },
-    x: 100
-});
 
 // gsap.to('.thx',{
 //     scrollTrigger: {
