@@ -16,6 +16,10 @@
   url("font/KonexyPersonalUse.otf") format("opentype");
   }
 
+.html{
+  scroll-behavior: smooth;
+}
+
 .nav-bg{
     background-color: var(--accent);
 }
@@ -374,6 +378,7 @@
 @media (max-width:600px){
   .front-img-1{
     z-index: 993;
+    padding-left: 0px;
     width: 90%;
     display: absolute;
   }
@@ -388,22 +393,26 @@
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: var(--primary);
     z-index: 999;
-    margin-top: 450px;
+    margin-top: 250px;
+    padding-left: 0;
   }
   
   .year-title-1{
-    color: var(--accent);
-    font-family: "konexy";
-    -webkit-text-stroke: 1px var(--accent);
-    -webkit-text-fill-color: transparent;
-    z-index: 998;
-    font-size: 3.0rem;
-    float: left;
+    display: none;
   }
   
   .project-desc-1{
     color: var(--accent);
     z-index: 999;
+  }
+
+  #wrapper {
+    width: 100%;
+    height: 60vh;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
